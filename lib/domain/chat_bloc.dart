@@ -63,10 +63,15 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     emit(state.copyWith(chatModel: updatedModel));
   }
 
-  void startTimer() {
-    timer = Timer.periodic(const Duration(seconds: 3), (_) {
-      add(const ChatEvent.addMessagePeriod());
-    });
+  bool isTimerRunning = false;
+
+  void startTimer() async {
+    if (!isTimerRunning) {
+      isTimerRunning = true;
+      timer = await Timer.periodic(const Duration(seconds: 3), (_) {
+        add(const ChatEvent.addMessagePeriod());
+      });
+    }
   }
 
   Future<void> _indexChat(

@@ -153,39 +153,33 @@ class ChatField extends StatelessWidget {
                               )),
                         ),
                       ),
-                      SizedBox(
-                        width: screenSize.width * 0.6 - 550,
+                      const Spacer(),
+                      const SwitchWidget(),
+                      const SizedBox(
+                        width: 10,
                       ),
-                      Row(
-                        children: [
-                          const SwitchWidget(),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const CircleAvatar(
-                            radius: 16,
-                            backgroundColor: Colors.white,
-                            backgroundImage: AssetImage('image/avatar.png'),
-                          ),
-                          const SizedBox(
-                            width: 30,
-                          ),
-                          ClipRect(
-                            child: Container(
-                                height: 62,
-                                width: 62,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(12),
-                                    color: AppColor.mainElement),
-                                child: IconButton(
-                                  icon: const Icon(Icons.more_vert),
-                                  onPressed: () {},
-                                )),
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                        ],
+                      const CircleAvatar(
+                        radius: 16,
+                        backgroundColor: Colors.white,
+                        backgroundImage: AssetImage('image/avatar.png'),
+                      ),
+                      const SizedBox(
+                        width: 30,
+                      ),
+                      ClipRect(
+                        child: Container(
+                            height: 62,
+                            width: 62,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12),
+                                color: AppColor.mainElement),
+                            child: IconButton(
+                              icon: const Icon(Icons.more_vert),
+                              onPressed: () {},
+                            )),
+                      ),
+                      const SizedBox(
+                        width: 10,
                       ),
                     ],
                   ),
