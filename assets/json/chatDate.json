@@ -1,0 +1,189 @@
+{
+  "userInfo": [
+    {
+      "id": 0,
+      "name": "Софья Макарова",
+      "imagePhotoUrl": "image/0.png",
+      "imageMessagerUrl": "svg/whatsApp.svg",
+      "lastMessage": "Привет, как дела?",
+      "timeLastMessage": "2023-08-04T12:34:56Z",
+      "listMessage": [
+        {
+          "type": "входящее",
+          "message": [
+            {
+              "message": "Привет! Хорошо, спасибо.",
+              "timeMessage": "2023-08-04T12:35:00Z"
+            },
+            {
+              "message": "Что делаешь сегодня?",
+              "timeMessage": "2023-08-04T12:40:10Z"
+            }
+          ]
+        },
+        {
+          "type": "исходящее",
+          "message": [
+            {
+              "message": "Я работаю над проектом.",
+              "timeMessage": "2023-08-04T12:41:30Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Андрей Муратов",
+      "imagePhotoUrl": "image/1.png",
+      "imageMessagerUrl": "svg/whatsApp.svg",
+      "lastMessage": "Ку, как дела?",
+      "timeLastMessage": "2023-08-04T13:45:00Z",
+      "listMessage": [
+        {
+          "type": "исходящее",
+          "message": [
+            {
+              "message": "Привет! Все хорошо.",
+              "timeMessage": "2023-08-04T13:46:10Z"
+            },
+            {
+              "message": "Что делаешь?",
+              "timeMessage": "2023-08-04T13:50:20Z"
+            }
+          ]
+        },
+        {
+          "type": "входящее",
+          "message": [
+            {
+              "message": "Я занимаюсь спортом.",
+              "timeMessage": "2023-08-04T13:51:30Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Кишлак Ахбекаев",
+      "imagePhotoUrl": "image/2.png",
+      "imageMessagerUrl": "svg/vk.svg",
+      "lastMessage": "What's up, man?",
+      "timeLastMessage": "2023-08-04T14:23:15Z",
+      "listMessage": [
+        {
+          "type": "входящее",
+          "message": [
+            {
+              "message": "Привет! Как прошел день?",
+              "timeMessage": "2023-08-04T14:25:00Z"
+            }
+          ]
+        },
+        {
+          "type": "исходящее",
+          "message": [
+            {
+              "message": "Все прошло отлично.",
+              "timeMessage": "2023-08-04T14:26:30Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Олеся Клунская",
+      "imagePhotoUrl": "image/3.png",
+      "imageMessagerUrl": "svg/vk.svg",
+      "lastMessage": "Привет, как оно?",
+      "timeLastMessage": "2023-08-04T15:10:20Z",
+      "listMessage": [
+        {
+          "type": "входящее",
+          "message": [
+            {
+              "message": "Доброе утро!",
+              "timeMessage": "2023-08-04T15:15:00Z"
+            },
+            {
+              "message": "Как твои дела?",
+              "timeMessage": "2023-08-04T15:20:30Z"
+            }
+          ]
+        },
+        {
+          "type": "исходящее",
+          "message": [
+            {
+              "message": "Утро хорошее. Все отлично!",
+              "timeMessage": "2023-08-04T15:22:00Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Эдгар Фаев",
+      "imagePhotoUrl": "image/4.png",
+      "imageMessagerUrl": "svg/whatsApp.svg",
+      "lastMessage": "Привет, как дела?",
+      "timeLastMessage": "2023-08-04T16:50:10Z",
+      "listMessage": [
+        {
+          "type": "исходящее",
+          "message": [
+            {
+              "message": "Привет! Как прошел день?",
+              "timeMessage": "2023-08-04T16:52:00Z"
+            }
+          ]
+        },
+        {
+          "type": "входящее",
+          "message": [
+           {
+          "message": "День был насыщенным. Я много работал.",
+          "timeMessage": "2023-08-04T16:55:30Z"
+        },
+        {
+          "message": "А у тебя как прошел день?",
+          "timeMessage": "2023-08-04T17:00:20Z"
+        }
+      ]
+    }
+  ]
+    },
+    {
+      "id": 5,
+      "name": "Кристина Гантова",
+      "imagePhotoUrl": "image/5.png",
+      "imageMessagerUrl": "svg/avito.svg",
+      "lastMessage": "Приветик, как дела?",
+      "timeLastMessage": "2023-08-04T18:15:40Z",
+      "listMessage": [
+        {
+          "type": "входящее",
+          "message": [
+            {
+              "message": "Привет! Как прошел выходной?",
+              "timeMessage": "2023-08-04T18:20:00Z"
+            }
+          ]
+        },
+        {
+          "type": "исходящее",
+          "message": [
+            {
+              "message": "Выходной был замечательным. Отдохнул хорошо.",
+              "timeMessage": "2023-08-04T18:25:10Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
