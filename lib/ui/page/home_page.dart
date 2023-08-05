@@ -14,6 +14,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+final chatBloc = BlocProvider.of<ChatBloc>(context);
+chatBloc.startTimer();
     final Size screenSize = MediaQuery.of(context).size;
     return BlocBuilder<ChatBloc, ChatState>(builder: (context, state) {
       return Scaffold(

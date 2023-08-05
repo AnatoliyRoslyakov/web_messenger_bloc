@@ -19,6 +19,7 @@ mixin _$ChatEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() init,
+    required TResult Function() addMessagePeriod,
     required TResult Function(int index) indexChat,
     required TResult Function(Message message, int index, ChatModel chatModel)
         addMessage,
@@ -27,6 +28,7 @@ mixin _$ChatEvent {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? init,
+    TResult? Function()? addMessagePeriod,
     TResult? Function(int index)? indexChat,
     TResult? Function(Message message, int index, ChatModel chatModel)?
         addMessage,
@@ -35,6 +37,7 @@ mixin _$ChatEvent {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? init,
+    TResult Function()? addMessagePeriod,
     TResult Function(int index)? indexChat,
     TResult Function(Message message, int index, ChatModel chatModel)?
         addMessage,
@@ -44,6 +47,7 @@ mixin _$ChatEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(InitChatEvent value) init,
+    required TResult Function(AddMessagePeriodChatEvent value) addMessagePeriod,
     required TResult Function(IndexChatChatEvent value) indexChat,
     required TResult Function(AddMessageChatEvent value) addMessage,
   }) =>
@@ -51,6 +55,7 @@ mixin _$ChatEvent {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(InitChatEvent value)? init,
+    TResult? Function(AddMessagePeriodChatEvent value)? addMessagePeriod,
     TResult? Function(IndexChatChatEvent value)? indexChat,
     TResult? Function(AddMessageChatEvent value)? addMessage,
   }) =>
@@ -58,6 +63,7 @@ mixin _$ChatEvent {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(InitChatEvent value)? init,
+    TResult Function(AddMessagePeriodChatEvent value)? addMessagePeriod,
     TResult Function(IndexChatChatEvent value)? indexChat,
     TResult Function(AddMessageChatEvent value)? addMessage,
     required TResult orElse(),
@@ -121,6 +127,7 @@ class _$InitChatEvent extends InitChatEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() init,
+    required TResult Function() addMessagePeriod,
     required TResult Function(int index) indexChat,
     required TResult Function(Message message, int index, ChatModel chatModel)
         addMessage,
@@ -132,6 +139,7 @@ class _$InitChatEvent extends InitChatEvent {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? init,
+    TResult? Function()? addMessagePeriod,
     TResult? Function(int index)? indexChat,
     TResult? Function(Message message, int index, ChatModel chatModel)?
         addMessage,
@@ -143,6 +151,7 @@ class _$InitChatEvent extends InitChatEvent {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? init,
+    TResult Function()? addMessagePeriod,
     TResult Function(int index)? indexChat,
     TResult Function(Message message, int index, ChatModel chatModel)?
         addMessage,
@@ -158,6 +167,7 @@ class _$InitChatEvent extends InitChatEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(InitChatEvent value) init,
+    required TResult Function(AddMessagePeriodChatEvent value) addMessagePeriod,
     required TResult Function(IndexChatChatEvent value) indexChat,
     required TResult Function(AddMessageChatEvent value) addMessage,
   }) {
@@ -168,6 +178,7 @@ class _$InitChatEvent extends InitChatEvent {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(InitChatEvent value)? init,
+    TResult? Function(AddMessagePeriodChatEvent value)? addMessagePeriod,
     TResult? Function(IndexChatChatEvent value)? indexChat,
     TResult? Function(AddMessageChatEvent value)? addMessage,
   }) {
@@ -178,6 +189,7 @@ class _$InitChatEvent extends InitChatEvent {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(InitChatEvent value)? init,
+    TResult Function(AddMessagePeriodChatEvent value)? addMessagePeriod,
     TResult Function(IndexChatChatEvent value)? indexChat,
     TResult Function(AddMessageChatEvent value)? addMessage,
     required TResult orElse(),
@@ -192,6 +204,126 @@ class _$InitChatEvent extends InitChatEvent {
 abstract class InitChatEvent extends ChatEvent {
   const factory InitChatEvent() = _$InitChatEvent;
   const InitChatEvent._() : super._();
+}
+
+/// @nodoc
+abstract class _$$AddMessagePeriodChatEventCopyWith<$Res> {
+  factory _$$AddMessagePeriodChatEventCopyWith(
+          _$AddMessagePeriodChatEvent value,
+          $Res Function(_$AddMessagePeriodChatEvent) then) =
+      __$$AddMessagePeriodChatEventCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$AddMessagePeriodChatEventCopyWithImpl<$Res>
+    extends _$ChatEventCopyWithImpl<$Res, _$AddMessagePeriodChatEvent>
+    implements _$$AddMessagePeriodChatEventCopyWith<$Res> {
+  __$$AddMessagePeriodChatEventCopyWithImpl(_$AddMessagePeriodChatEvent _value,
+      $Res Function(_$AddMessagePeriodChatEvent) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$AddMessagePeriodChatEvent extends AddMessagePeriodChatEvent {
+  const _$AddMessagePeriodChatEvent() : super._();
+
+  @override
+  String toString() {
+    return 'ChatEvent.addMessagePeriod()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AddMessagePeriodChatEvent);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() init,
+    required TResult Function() addMessagePeriod,
+    required TResult Function(int index) indexChat,
+    required TResult Function(Message message, int index, ChatModel chatModel)
+        addMessage,
+  }) {
+    return addMessagePeriod();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? init,
+    TResult? Function()? addMessagePeriod,
+    TResult? Function(int index)? indexChat,
+    TResult? Function(Message message, int index, ChatModel chatModel)?
+        addMessage,
+  }) {
+    return addMessagePeriod?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? init,
+    TResult Function()? addMessagePeriod,
+    TResult Function(int index)? indexChat,
+    TResult Function(Message message, int index, ChatModel chatModel)?
+        addMessage,
+    required TResult orElse(),
+  }) {
+    if (addMessagePeriod != null) {
+      return addMessagePeriod();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(InitChatEvent value) init,
+    required TResult Function(AddMessagePeriodChatEvent value) addMessagePeriod,
+    required TResult Function(IndexChatChatEvent value) indexChat,
+    required TResult Function(AddMessageChatEvent value) addMessage,
+  }) {
+    return addMessagePeriod(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(InitChatEvent value)? init,
+    TResult? Function(AddMessagePeriodChatEvent value)? addMessagePeriod,
+    TResult? Function(IndexChatChatEvent value)? indexChat,
+    TResult? Function(AddMessageChatEvent value)? addMessage,
+  }) {
+    return addMessagePeriod?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(InitChatEvent value)? init,
+    TResult Function(AddMessagePeriodChatEvent value)? addMessagePeriod,
+    TResult Function(IndexChatChatEvent value)? indexChat,
+    TResult Function(AddMessageChatEvent value)? addMessage,
+    required TResult orElse(),
+  }) {
+    if (addMessagePeriod != null) {
+      return addMessagePeriod(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class AddMessagePeriodChatEvent extends ChatEvent {
+  const factory AddMessagePeriodChatEvent() = _$AddMessagePeriodChatEvent;
+  const AddMessagePeriodChatEvent._() : super._();
 }
 
 /// @nodoc
@@ -260,6 +392,7 @@ class _$IndexChatChatEvent extends IndexChatChatEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() init,
+    required TResult Function() addMessagePeriod,
     required TResult Function(int index) indexChat,
     required TResult Function(Message message, int index, ChatModel chatModel)
         addMessage,
@@ -271,6 +404,7 @@ class _$IndexChatChatEvent extends IndexChatChatEvent {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? init,
+    TResult? Function()? addMessagePeriod,
     TResult? Function(int index)? indexChat,
     TResult? Function(Message message, int index, ChatModel chatModel)?
         addMessage,
@@ -282,6 +416,7 @@ class _$IndexChatChatEvent extends IndexChatChatEvent {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? init,
+    TResult Function()? addMessagePeriod,
     TResult Function(int index)? indexChat,
     TResult Function(Message message, int index, ChatModel chatModel)?
         addMessage,
@@ -297,6 +432,7 @@ class _$IndexChatChatEvent extends IndexChatChatEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(InitChatEvent value) init,
+    required TResult Function(AddMessagePeriodChatEvent value) addMessagePeriod,
     required TResult Function(IndexChatChatEvent value) indexChat,
     required TResult Function(AddMessageChatEvent value) addMessage,
   }) {
@@ -307,6 +443,7 @@ class _$IndexChatChatEvent extends IndexChatChatEvent {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(InitChatEvent value)? init,
+    TResult? Function(AddMessagePeriodChatEvent value)? addMessagePeriod,
     TResult? Function(IndexChatChatEvent value)? indexChat,
     TResult? Function(AddMessageChatEvent value)? addMessage,
   }) {
@@ -317,6 +454,7 @@ class _$IndexChatChatEvent extends IndexChatChatEvent {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(InitChatEvent value)? init,
+    TResult Function(AddMessagePeriodChatEvent value)? addMessagePeriod,
     TResult Function(IndexChatChatEvent value)? indexChat,
     TResult Function(AddMessageChatEvent value)? addMessage,
     required TResult orElse(),
@@ -422,6 +560,7 @@ class _$AddMessageChatEvent extends AddMessageChatEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() init,
+    required TResult Function() addMessagePeriod,
     required TResult Function(int index) indexChat,
     required TResult Function(Message message, int index, ChatModel chatModel)
         addMessage,
@@ -433,6 +572,7 @@ class _$AddMessageChatEvent extends AddMessageChatEvent {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? init,
+    TResult? Function()? addMessagePeriod,
     TResult? Function(int index)? indexChat,
     TResult? Function(Message message, int index, ChatModel chatModel)?
         addMessage,
@@ -444,6 +584,7 @@ class _$AddMessageChatEvent extends AddMessageChatEvent {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? init,
+    TResult Function()? addMessagePeriod,
     TResult Function(int index)? indexChat,
     TResult Function(Message message, int index, ChatModel chatModel)?
         addMessage,
@@ -459,6 +600,7 @@ class _$AddMessageChatEvent extends AddMessageChatEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(InitChatEvent value) init,
+    required TResult Function(AddMessagePeriodChatEvent value) addMessagePeriod,
     required TResult Function(IndexChatChatEvent value) indexChat,
     required TResult Function(AddMessageChatEvent value) addMessage,
   }) {
@@ -469,6 +611,7 @@ class _$AddMessageChatEvent extends AddMessageChatEvent {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(InitChatEvent value)? init,
+    TResult? Function(AddMessagePeriodChatEvent value)? addMessagePeriod,
     TResult? Function(IndexChatChatEvent value)? indexChat,
     TResult? Function(AddMessageChatEvent value)? addMessage,
   }) {
@@ -479,6 +622,7 @@ class _$AddMessageChatEvent extends AddMessageChatEvent {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(InitChatEvent value)? init,
+    TResult Function(AddMessagePeriodChatEvent value)? addMessagePeriod,
     TResult Function(IndexChatChatEvent value)? indexChat,
     TResult Function(AddMessageChatEvent value)? addMessage,
     required TResult orElse(),

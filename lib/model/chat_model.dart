@@ -13,12 +13,12 @@ class ChatModel {
 
   Map<String, dynamic> toJson() => _$ChatModelToJson(this);
 
-  ChatModel addMessageToUserInfo(int userInfoId, Message newMessage) {
+  ChatModel addMessageToUserInfo(int userInfoId, Message newMessage, String type) {
     List<UserInfo> updatedUserInfo = userInfo.map((info) {
       if (info.id == userInfoId) {
         List<ListMessage> updatedListMessage = List.from(info.listMessage);
         updatedListMessage
-            .add(ListMessage(type: 'исходящие', message: [newMessage]));
+            .add(ListMessage(type: type, message: [newMessage]));
         return info.copyWith(listMessage: updatedListMessage);
       } else {
         return info;
